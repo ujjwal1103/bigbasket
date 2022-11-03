@@ -4,7 +4,19 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      transitionDuration: {
+        '0': '0ms',
+        '3000': '0.3s',
+      }
+
+    },
+  },
+  variants:{
+    extend:{
+      display:['group-hover']
+
+    }
   },
   plugins: [],
 }
